@@ -1,0 +1,4 @@
+<button [ngClass]="buttonClasses" [disabled]="disabled">
+    <ng-content></ng-content>
+    <span *ngIf="loading" class="loader"></span>
+</button>

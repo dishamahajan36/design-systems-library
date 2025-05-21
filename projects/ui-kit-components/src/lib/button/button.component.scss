@@ -1,0 +1,113 @@
+:host {
+    /* Common styles for the *host* element (the <lib-button> itself) */
+    display: inline-flex;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  
+    button {
+      all: unset;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+  
+      border: var(--border-width-none);
+      border-radius: var(--button-border-radius);
+      font-family: var(--font-family-base);
+      font-weight: var(--button-font-weight);
+      transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: var(--button-box-shadow);
+  
+      /* Default (Medium) size for the inner button */
+      padding: var(--button-padding-y-md) var(--button-padding-x-md);
+      font-size: var(--button-font-size-md);
+  
+      /* DISABLED STATE STYLES for the inner button */
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        box-shadow: var(--button-box-shadow-disabled);
+      }
+
+      /* Loader styles */
+      .loader {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        border-right-color: transparent;
+        margin-left: var(--space-xs);
+        animation: loader-spin 0.8s linear infinite;
+      }
+
+      @keyframes loader-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      &.lib-button--primary { 
+        background-color: var(--button-background-primary);
+        color: var(--button-text-color-primary);
+        border-radius: var(--button-border-radius);
+  
+        &:hover:not(:disabled) {
+          background-color: var(--button-background-primary-hover);
+        }
+      }
+  
+      &.lib-button--secondary { /* <-- UPDATED CLASS NAME */
+        background-color: var(--button-background-secondary);
+        color: var(--button-text-color-secondary);
+  
+        &:hover:not(:disabled) {
+          background-color: var(--button-background-secondary-hover);
+        }
+      }
+  
+      &.lib-button--success {
+        background-color: var(--button-background-success);
+        color: var(--button-text-color-success);
+  
+        &:hover:not(:disabled) {
+          background-color: var(--button-background-success-hover);
+        }
+      }
+  
+      &.lib-button--danger { 
+        background-color: var(--button-background-danger);
+        color: var(--button-text-color-danger);
+  
+        &:hover:not(:disabled) {
+          background-color: var(--button-background-danger-hover);
+        }
+      }
+
+      &.lib-button--details {
+        background-color: var(--button-background-details);
+        color: var(--button-text-color-details);
+  
+        &:hover:not(:disabled) {
+          background-color: var(--button-background-details-hover);
+          color: var(--button-text-color-details-hover);
+        }
+      }
+  
+      /* ----------------------------------------------------- */
+      /* SIZE STYLES - Classes applied to the inner <button> element. */
+      /* ----------------------------------------------------- */
+      &.lib-button--sm { /* <-- UPDATED CLASS NAME */
+        padding: var(--button-padding-y-sm) var(--button-padding-x-sm);
+        font-size: var(--button-font-size-sm);
+      }
+  
+      &.lib-button--lg { /* <-- UPDATED CLASS NAME */
+        padding: var(--button-padding-y-lg) var(--button-padding-x-lg);
+        font-size: var(--button-font-size-lg);
+      }
+    }
+  }

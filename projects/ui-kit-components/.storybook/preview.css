@@ -1,0 +1,132 @@
+/* CSS Variables */
+:root {
+  /* --- Brand Colors (Palette) --- */
+  --brand-blue-500: #007bff;
+  --brand-blue-700: #0056b3;
+  --brand-red-500: #dc3545;
+  --brand-red-700: #bd2130;
+  --brand-green-500: #28a745;
+  --brand-green-700: #1e7e34;
+  --brand-gray-100: #f8f9fa;
+  --brand-gray-200: #e9ecef;
+  --brand-gray-300: #dee2e6;
+  --brand-gray-500: #adb5bd;
+  --brand-gray-700: #495057;
+  --brand-gray-900: #212529;
+  --brand-white: #ffffff;
+  --brand-black: #000000;
+
+  /* --- Spacing Scale --- */
+  --space-0: 0px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  /* --- Font Sizes (Scale) --- */
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+
+  /* --- Font Weights --- */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* --- Border Radii --- */
+  --border-radius-none: 0;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 9999px;
+
+  /* --- Border Widths --- */
+  --border-width-none: 0;
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+
+  /* --- Shadows --- */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* --- Z-index --- */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+
+  /* --- General / Global Semantics --- */
+  --color-surface-default: var(--brand-white);
+  --color-surface-alt: var(--brand-gray-100);
+  --color-text-default: var(--brand-gray-900);
+  --color-text-secondary: var(--brand-gray-700);
+  --color-text-inverse: var(--brand-white);
+  --color-border-default: var(--brand-gray-300);
+
+  /* --- Action / Interactive Colors --- */
+  --color-primary: var(--brand-blue-500);
+  --color-primary-hover: var(--brand-blue-700);
+  --color-secondary: var(--brand-gray-500);
+  --color-secondary-hover: var(--brand-gray-700);
+  --color-success: var(--brand-green-500);
+  --color-success-hover: var(--brand-green-700);
+  --color-danger: var(--brand-red-500);
+  --color-danger-hover: var(--brand-red-700);
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+
+  /* --- Typography Semantics --- */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-line-height-base: 1.5;
+
+  /* --- Component Specific Semantics: Button --- */
+  --button-padding-y-sm: var(--space-xs);
+  --button-padding-x-sm: var(--space-sm);
+  --button-padding-y-md: var(--space-sm);
+  --button-padding-x-md: var(--space-md);
+  --button-padding-y-lg: var(--space-md);
+  --button-padding-x-lg: var(--space-lg);
+
+  --button-border-radius: var(--border-radius-sm);
+  --button-font-size-sm: var(--font-size-sm);
+  --button-font-size-md: var(--font-size-base);
+  --button-font-size-lg: var(--font-size-md);
+  --button-font-weight: var(--font-weight-semibold);
+  --button-box-shadow: var(--shadow-sm);
+  --button-box-shadow-disabled: var(--shadow-none);
+
+  /* Primary Button */
+  --button-text-color-primary: var(--color-text-inverse);
+  --button-background-primary: var(--color-primary);
+  --button-background-primary-hover: var(--color-primary-hover);
+
+  /* Secondary Button */
+  --button-text-color-secondary: var(--color-text-inverse);
+  --button-background-secondary: var(--color-secondary);
+  --button-background-secondary-hover: var(--color-secondary-hover);
+
+  /* Success Button */
+  --button-text-color-success: var(--color-text-inverse);
+  --button-background-success: var(--color-success);
+  --button-background-success-hover: var(--color-success-hover);
+
+  /* Danger Button */
+  --button-text-color-danger: var(--color-text-inverse);
+  --button-background-danger: var(--color-danger);
+  --button-background-danger-hover: var(--color-danger-hover);
+}
